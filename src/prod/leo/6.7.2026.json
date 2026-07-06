@@ -1,0 +1,933 @@
+{
+    "state": "Done",
+    "series": [
+      {
+        "refId": "A",
+        "fields": [
+          {
+            "name": "labels",
+            "type": "other",
+            "typeInfo": {
+              "frame": "json.RawMessage"
+            },
+            "config": {},
+            "values": [
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:33\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-69465995f7-95cfb",
+                "pod_template_hash": "69465995f7",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/patient-attendee-details/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:33\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-69465995f7-95cfb",
+                "pod_template_hash": "69465995f7",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:34\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-69465995f7-b68l7",
+                "pod_template_hash": "69465995f7",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/patient-attendee-details/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:34\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-69465995f7-b68l7",
+                "pod_template_hash": "69465995f7",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:10:49\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:10:49\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:47:59\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement-management/meetingAttendeeSummary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:47:59\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:48:08\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement-management/meetingAttendeeSummary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:48:08\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 09:48:48\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 09:48:48\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5296\",\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5296\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:16:50\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5296\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/closeout/legacy-reconciliation/5296] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5296\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:16:50\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-cj8hg",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:26\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-mt298",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:26\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-mt298",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:40\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-rzvwj",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:40\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-rzvwj",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/note/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/note/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/note/list\",\"statusCode\":400,\"timestamp\":\"2026-07-03 07:47:58\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-rzvwj",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:10:59\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-vg9df",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/patient-attendee-details/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:10:59\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-vg9df",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:42:42\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-wv6tt",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:42:42\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-wv6tt",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "unknown",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5292\",\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5292\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:37:00\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-wv6tt",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              },
+              {
+                "appname": "client-services-api-leo",
+                "cluster": "leo-prod",
+                "container": "client-services-api-leo",
+                "detected_level": "error",
+                "job": "fluent-bit-prod",
+                "log": "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5292\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/closeout/legacy-reconciliation/5292] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5292\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:37:00\"}",
+                "namespace": "prod",
+                "pod": "client-services-api-leo-755fcd7b9d-wv6tt",
+                "pod_template_hash": "755fcd7b9d",
+                "service_name": "client-services-api-leo"
+              }
+            ],
+            "entities": {},
+            "state": {
+              "scopedVars": {
+                "__dataContext": "Filtered out in JSON serialization"
+              },
+              "displayName": null,
+              "seriesIndex": 0
+            }
+          },
+          {
+            "name": "Time",
+            "type": "time",
+            "typeInfo": {
+              "frame": "time.Time"
+            },
+            "config": {},
+            "values": [
+              1783108593048,
+              1783108593049,
+              1783108594356,
+              1783108594358,
+              1783062649417,
+              1783062649461,
+              1783064879819,
+              1783064879820,
+              1783064888762,
+              1783064888764,
+              1783072128971,
+              1783072128972,
+              1783073810200,
+              1783073810202,
+              1783062566713,
+              1783062566716,
+              1783062580815,
+              1783062580817,
+              1783064878807,
+              1783062659848,
+              1783062659885,
+              1783064562932,
+              1783064562934,
+              1783075020623,
+              1783075020626
+            ],
+            "entities": {},
+            "nanos": [
+              263896,
+              880344,
+              133167,
+              710012,
+              898004,
+              891388,
+              267656,
+              202178,
+              996043,
+              386441,
+              321358,
+              968554,
+              466252,
+              234026,
+              602986,
+              28519,
+              884087,
+              681670,
+              238892,
+              506760,
+              119097,
+              20839,
+              418843,
+              530653,
+              486082
+            ],
+            "state": {
+              "scopedVars": {
+                "__dataContext": "Filtered out in JSON serialization"
+              },
+              "displayName": null,
+              "seriesIndex": 1
+            }
+          },
+          {
+            "name": "Line",
+            "type": "string",
+            "typeInfo": {
+              "frame": "string"
+            },
+            "config": {},
+            "values": [
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:33\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/patient-attendee-details/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:33\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:34\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/patient-attendee-details/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 19:56:34\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:10:49\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:10:49\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:47:59\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement-management/meetingAttendeeSummary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:47:59\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:48:08\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement-management/meetingAttendeeSummary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement-management/meetingAttendeeSummary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement-management/meetingAttendeeSummary\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:48:08\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 09:48:48\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 09:48:48\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5296\",\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5296\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:16:50\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5296\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/closeout/legacy-reconciliation/5296] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5296\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:16:50\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:26\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:26\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:40\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:09:40\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/note/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/note/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/note/list\",\"statusCode\":400,\"timestamp\":\"2026-07-03 07:47:58\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:10:59\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/patient-attendee-details/list\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/patient-attendee-details/list] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/patient-attendee-details/list\",\"statusCode\":404,\"timestamp\":\"2026-07-03 07:10:59\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/engagement/summary\",\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:42:42\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/engagement/summary\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/engagement/summary] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/engagement/summary\",\"statusCode\":500,\"timestamp\":\"2026-07-03 07:42:42\"}",
+              "\u001b[33mwarn\u001b[39m: [sqlAuditContextMiddleware] Rolling back audit transaction due to failed response {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5292\",\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5292\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:37:00\"}",
+              "\u001b[31merror\u001b[39m: [sqlAuditContextMiddleware] Error after response was sent {\"endpoint\":\"POST /api/v1/closeout/legacy-reconciliation/5292\",\"error\":{\"message\":\"[sqlAuditContextMiddleware] [POST /api/v1/closeout/legacy-reconciliation/5292] Rolling back audit transaction due to failed response.\",\"name\":\"Error\"},\"method\":\"POST\",\"path\":\"/api/v1/closeout/legacy-reconciliation/5292\",\"statusCode\":500,\"timestamp\":\"2026-07-03 10:37:00\"}"
+            ],
+            "entities": {},
+            "state": {
+              "scopedVars": {
+                "__dataContext": "Filtered out in JSON serialization"
+              },
+              "displayName": null,
+              "seriesIndex": 1
+            }
+          },
+          {
+            "name": "tsNs",
+            "type": "string",
+            "typeInfo": {
+              "frame": "string"
+            },
+            "config": {},
+            "values": [
+              "1783108593048263896",
+              "1783108593049880344",
+              "1783108594356133167",
+              "1783108594358710012",
+              "1783062649417898004",
+              "1783062649461891388",
+              "1783064879819267656",
+              "1783064879820202178",
+              "1783064888762996043",
+              "1783064888764386441",
+              "1783072128971321358",
+              "1783072128972968554",
+              "1783073810200466252",
+              "1783073810202234026",
+              "1783062566713602986",
+              "1783062566716028519",
+              "1783062580815884087",
+              "1783062580817681670",
+              "1783064878807238892",
+              "1783062659848506760",
+              "1783062659885119097",
+              "1783064562932020839",
+              "1783064562934418843",
+              "1783075020623530653",
+              "1783075020626486082"
+            ],
+            "entities": {},
+            "state": {
+              "scopedVars": {
+                "__dataContext": "Filtered out in JSON serialization"
+              },
+              "displayName": null,
+              "seriesIndex": 2
+            }
+          },
+          {
+            "name": "labelTypes",
+            "type": "other",
+            "typeInfo": {
+              "frame": "json.RawMessage"
+            },
+            "config": {
+              "custom": {
+                "hidden": true
+              }
+            },
+            "values": [
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              },
+              {
+                "appname": "I",
+                "cluster": "I",
+                "container": "I",
+                "detected_level": "S",
+                "job": "I",
+                "log": "P",
+                "namespace": "I",
+                "pod": "I",
+                "pod_template_hash": "I",
+                "service_name": "I"
+              }
+            ],
+            "entities": {},
+            "state": {
+              "scopedVars": {
+                "__dataContext": "Filtered out in JSON serialization"
+              },
+              "displayName": null,
+              "seriesIndex": 3
+            }
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "typeInfo": {
+              "frame": "string"
+            },
+            "config": {},
+            "values": [
+              "1783108593048263896_6b63f80d",
+              "1783108593049880344_ef18c6b",
+              "1783108594356133167_3604049",
+              "1783108594358710012_cdaf3fc9",
+              "1783062649417898004_b74e4ca",
+              "1783062649461891388_3b0f6c4e",
+              "1783064879819267656_8d468444",
+              "1783064879820202178_c7865f9c",
+              "1783064888762996043_1e3bae12",
+              "1783064888764386441_e2d6f80",
+              "1783072128971321358_f1e179ae",
+              "1783072128972968554_8008aeb2",
+              "1783073810200466252_5e3c7fa6",
+              "1783073810202234026_4d63a49e",
+              "1783062566713602986_137751e6",
+              "1783062566716028519_7d03149c",
+              "1783062580815884087_e52d09cb",
+              "1783062580817681670_a3d173d1",
+              "1783064878807238892_cecc6ca3",
+              "1783062659848506760_76c992ce",
+              "1783062659885119097_3b098b6a",
+              "1783064562932020839_de9c5b4b",
+              "1783064562934418843_904f3287",
+              "1783075020623530653_f742cbd3",
+              "1783075020626486082_cae942df"
+            ],
+            "entities": {},
+            "state": {
+              "scopedVars": {
+                "__dataContext": "Filtered out in JSON serialization"
+              },
+              "displayName": null,
+              "seriesIndex": 4
+            }
+          }
+        ],
+        "length": 25,
+        "meta": {
+          "typeVersion": [
+            0,
+            0
+          ],
+          "custom": {
+            "frameType": "LabeledTimeValues",
+            "lokiQueryStatKey": "Summary: total bytes processed"
+          },
+          "stats": [
+            {
+              "value": 153170954,
+              "displayName": "Summary: total bytes processed",
+              "unit": "decbytes"
+            },
+            {
+              "value": 1.0125549999999999,
+              "displayName": "Summary: exec time",
+              "unit": "s"
+            }
+          ],
+          "executedQueryString": "Expr: {job=\"fluent-bit-prod\",namespace=\"prod\",appname=\"client-services-api-leo\"} !=\"Blackbox\" != \"ELB\" !=\"kube-probe\" | json log | line_format \"{{.log}}\" |= \"Rolling back\"",
+          "preferredVisualisationType": "logs",
+          "limit": 1000,
+          "searchWords": [
+            "Rolling back"
+          ]
+        }
+      }
+    ],
+    "request": {
+      "app": "dashboard",
+      "requestId": "SQR106",
+      "timezone": "Asia/Kolkata",
+      "range": {
+        "to": "2026-07-06T05:40:38.229Z",
+        "from": "2026-07-03T05:40:38.229Z",
+        "raw": {
+          "from": "now-3d",
+          "to": "now"
+        }
+      },
+      "interval": "5m",
+      "intervalMs": 300000,
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "aertlx8ktoruof"
+          },
+          "direction": "forward",
+          "editorMode": "code",
+          "expr": "{job=\"fluent-bit-prod\",namespace=\"prod\",appname=\"client-services-api-leo\"} !=\"Blackbox\" != \"ELB\" !=\"kube-probe\" | json log | line_format \"{{.log}}\" |= \"$search\"",
+          "queryType": "range",
+          "refId": "A"
+        }
+      ],
+      "maxDataPoints": 1138,
+      "scopedVars": {
+        "__sceneObject": "Filtered out in JSON serialization",
+        "__interval": {
+          "text": "5m",
+          "value": "5m"
+        },
+        "__interval_ms": {
+          "text": "300000",
+          "value": 300000
+        }
+      },
+      "startTime": 1783316438253,
+      "rangeRaw": {
+        "from": "now-3d",
+        "to": "now"
+      },
+      "dashboardUID": "5436b7d4-4ba6-47d8-9a84-e379c650e81f",
+      "panelId": 1,
+      "panelName": "client-services-api-leo",
+      "panelPluginId": "logs",
+      "dashboardTitle": "Nextgen Leo Prod Logs",
+      "endTime": 1783316441576
+    },
+    "timings": {
+      "dataProcessingTime": 0
+    },
+    "structureRev": 1
+  }

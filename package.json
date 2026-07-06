@@ -1,0 +1,23 @@
+{
+  "name": "dailyactivity",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "qaleo": "ts-node src/qaleologfilter.ts",
+    "uatleo": "ts-node src/uatleologfilter.ts",
+    "qashionogi": "ts-node src/qashionogilogfilter.ts",
+    "uatshionogi": "ts-node src/uatshionogilogfilter.ts",
+    "clientuatleo": "ts-node src/clientuatleologfilter.ts",
+    "clientuatshionogi": "ts-node src/clientuatshionogilogfilter.ts",
+    "prodleo": "ts-node src/prodleologfilter.ts",
+    "prodshionogi": "ts-node src/prodshionogilogfilter.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
