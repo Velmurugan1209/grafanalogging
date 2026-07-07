@@ -1,12 +1,23 @@
 import * as fs from "fs";
 import * as path from "path";
 import * as XLSX from "xlsx";
+import {
+  cleanLogText,
+  extractDate,
+  extractErrorMessage,
+  extractMethodAndEndpoint,
+  resolveDetectLevel,
+} from "./logParser";
+import {
+  loadWorkbookFromOneDrive,
+  syncWorkbookToOneDrive,
+} from "./onedriveSync";
 
 const ROOT_DIR = process.cwd();
 const INPUT_DIR = path.join(ROOT_DIR, "src", "prod", "leo");
 const OUTPUT_DIR = path.join(ROOT_DIR, "src", "prod", "leo", "output");
 
-const SKIP_LEVELS = new Set(["info", "unknown"]);
+const SKIP_LEVELS = new Set(["info"]);
 
 function parseFileDate(filename: string): string | null {
   const iso = filename.match(/^(\d{4})-(\d{2})-(\d{2})\.json$/);
@@ -74,19 +85,12 @@ const ENDPOINT_COL = 3;
 const COUNT_COL = 4;
 
 const outputDir = path.join(ROOT_DIR, "output");
-const ONEDRIVE_DIR = path.join(
-  "/Users/velmurugan/Library/CloudStorage/OneDrive-NOVASTRIDITVENTURESPRIVATELIMITED",
-  "grafanalog"
-);
-const ONEDRIVE_PATH = path.join(ONEDRIVE_DIR, "GrafanaErrorLog.xlsx");
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-if (!fs.existsSync(WORKBOOK_PATH) && fs.existsSync(ONEDRIVE_PATH)) {
-  fs.copyFileSync(ONEDRIVE_PATH, WORKBOOK_PATH);
-}
+loadWorkbookFromOneDrive(WORKBOOK_PATH);
 
 let workbook: XLSX.WorkBook;
 if (fs.existsSync(WORKBOOK_PATH)) {
@@ -157,49 +161,13 @@ for (const value of labelEntries) {
 
       const log = value.log ?? "";
       const serviceName = value.service_name ?? "";
-      const cleanLog = log.replace(/\x1b\[[0-9;]*m/g, "");
+      const cleanLog = cleanLogText(log);
+      const date = extractDate(cleanLog);
+      const { method, endpoint } = extractMethodAndEndpoint(cleanLog);
+      const errorMessage = extractErrorMessage(cleanLog);
+      const level = resolveDetectLevel(detectLevel, cleanLog);
 
-      const tsJson = cleanLog.match(/"timestamp":"([^"]+)"/);
-      let date = tsJson?.[1] ?? "";
-      if (!date) {
-        const tsIso = cleanLog.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2}:\d{2})/);
-        if (tsIso) date = tsIso[1];
-      }
-
-      const isoPrefix = date.match(/^(\d{4}-\d{2}-\d{2})/);
-      if (isoPrefix) {
-        date = isoPrefix[1];
-      } else {
-        const apacheDate = date.match(/^(\d{2})\/(\w{3})\/(\d{4})/);
-        if (apacheDate) {
-          const months: Record<string, string> = {
-            Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06",
-            Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12",
-          };
-          date = `${apacheDate[3]}-${months[apacheDate[2]] ?? "01"}-${apacheDate[1]}`;
-        }
-      }
-
-      const methodMatch =
-        cleanLog.match(/"(GET|POST|PUT|PATCH|DELETE)\s+[^"]+"/) ??
-        cleanLog.match(/"endpoint":"(GET|POST|PUT|PATCH|DELETE)\s+/) ??
-        cleanLog.match(/\[(GET|POST|PUT|PATCH|DELETE)\s+\//);
-      const method = methodMatch?.[1] ?? "";
-
-      const endpointMatch =
-        cleanLog.match(/"(?:GET|POST|PUT|PATCH|DELETE)\s+(\/[^\s?"]+)/) ??
-        cleanLog.match(
-          /"endpoint":"(?:GET|POST|PUT|PATCH|DELETE)\s+(\/[^\s?"]+)/
-        ) ??
-        cleanLog.match(/"path":"(\/[^"?]+)/) ??
-        cleanLog.match(/\[(?:GET|POST|PUT|PATCH|DELETE)\s+(\/[^\]]+)\]/);
-      let endpoint = endpointMatch?.[1] ?? "";
-      endpoint = endpoint.replace(/\/\d+$/, "");
-
-      const errorMsgMatch = cleanLog.match(
-        /(?:error|warn|fatal|debug):\s*([^{]*)/i
-      );
-      const errorMessage = errorMsgMatch?.[1]?.trim() ?? "";
+      if (!endpoint) continue;
 
       if (endpoint && seenEndpoints.has(endpoint)) {
         const idx = seenEndpoints.get(endpoint)!;
@@ -218,7 +186,7 @@ for (const value of labelEntries) {
         endpoint,
         "1",
         errorMessage,
-        detectLevel,
+        level,
       ]);
     }
 
@@ -267,10 +235,6 @@ for (const name of workbook.SheetNames) {
 
 XLSX.writeFile(workbook, WORKBOOK_PATH);
 
-if (!fs.existsSync(ONEDRIVE_DIR)) {
-  fs.mkdirSync(ONEDRIVE_DIR, { recursive: true });
-}
-fs.copyFileSync(WORKBOOK_PATH, ONEDRIVE_PATH);
+syncWorkbookToOneDrive(WORKBOOK_PATH);
 
 console.log(`Excel generated successfully: ${WORKBOOK_PATH} (sheet: ${SHEET_NAME})`);
-console.log(`Synced to OneDrive: ${ONEDRIVE_PATH}`);
