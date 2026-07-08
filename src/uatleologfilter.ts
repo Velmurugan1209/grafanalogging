@@ -155,6 +155,7 @@ for (const series of data.series ?? []) {
       const { method, endpoint } = extractMethodAndEndpoint(cleanLog);
       const errorMessage = extractErrorMessage(cleanLog);
       const level = resolveDetectLevel(detectLevel, cleanLog);
+      if (level !== "error") continue;
 
       if (!endpoint) continue;
 
